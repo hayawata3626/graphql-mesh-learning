@@ -7,5 +7,7 @@ additionalTypeDefs: |
   extend type Query {
     viewsInPastMonth(project: String!): Float!
   }
+require:
+  - ts-node/register/transpile-only
 additionalResolvers:
-  - ./mesh/additional-resolvers.js
+  - ./src/mesh/additional-resolvers.ts

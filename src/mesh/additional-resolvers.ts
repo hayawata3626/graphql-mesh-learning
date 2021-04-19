@@ -1,6 +1,8 @@
+import { Resolvers } from '../generated/mesh';
+
 const moment = require('moment');
 
-const resolvers = {
+const resolvers: Resolvers = {
   Query: {
     viewsInPastMonth: async (root, args, { Wiki }) => {
       const {
